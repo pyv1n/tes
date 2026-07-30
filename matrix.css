@@ -1,0 +1,19 @@
+#matrix{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 55%;
+    height: 100vh;
+
+    z-index: 0;
+    opacity: .50;
+    pointer-events: none;
+
+    mask-image:
+        linear-gradient(to left, black 50%, transparent 100%),
+        linear-gradient(to top, black 75%, transparent 100%);
+    -webkit-mask-image:
+        linear-gradient(to left, black 50%, transparent 100%),
+        linear-gradient(to top, black 75%, transparent 100%);
+}

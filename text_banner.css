@@ -1,0 +1,25 @@
+.marquee{
+    width:100%;
+    overflow:hidden;
+    padding:20px 0;
+}
+
+.marquee-track{
+    display:flex;
+    width:max-content;
+    will-change:transform;
+}
+
+.marquee-group span{
+    font-size: 5rem;
+    text-shadow:0 0 30px rgba(0, 213, 255, 0.836); ;
+    font-weight: 900;
+    white-space: nowrap;
+    color: white;
+    text-transform: uppercase;
+}
+
+.marquee-group span{
+    white-space:nowrap;
+    flex-shrink:0;
+}
