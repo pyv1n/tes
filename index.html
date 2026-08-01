@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+
     <div id="loader">
 
     <div class="loader-content">
 
-        <h1>K2</h1>
+        <h1>Loading...</h1>
 
         <p id="loading-status">Initializing...</p>
 
@@ -48,6 +49,7 @@
         <li><a href="#about">Tentang</a></li>
         <li><a href="#team">Tim</a></li>
         <li><a href="#quotes">Quotes</a></li>
+        <li><a href="games/snake.html" class="game-btn">🎮 Games</a></li>
     </ul>
 </nav>
 
@@ -94,15 +96,83 @@
     <h2>Tentang Kelompok</h2>
 
     <p>
-    Kelompok kami terdiri dari 6 orang yaitu Melpin Pirman Andika Daru Ibam Rahmat. Saya(Melpin) selaku Creator ingin mengucapkan terima kasih
-    kepada kelompok saya karena kelompok saya gak ribet minta ini itu jadi saya sangat SENANG dapat BEKERJA SAMA dengan kalian. Terima Kasih juga
-    untuk Chat GPT karena sudah mau Kerja Rodi 3 hari 3 malam untuk membantu saya membangun website ini walaupun saya menggunakan Chat GPT versi
-    Free dan 3 Akun saya kena Limit. tapi Beliau tetap mau membantu saya. Sekian Terima Kasih.
+    Kelompok kami terdiri dari 6 orang yaitu Melpin Pirman Andika Daru Ibam Rahmat. Sebenernya saya bingung mau tulis apa dibagian ini jadi 
+    biar ke isi saya tulis aja. 
     </p>
 
 </section>
 
 <section id="team" class="team hidden">
+
+    <svg class="network-bg" viewBox="0 0 1000 600">
+
+<g>
+
+<!-- kiri atas -->
+<path d="M80 100 L220 160 L350 120 L500 300"/>
+<path d="M220 160 L260 80"/>
+<path d="M350 120 L420 60"/>
+
+
+<!-- kanan atas -->
+<path d="M920 90 L760 150 L650 130 L500 300"/>
+<path d="M760 150 L820 220"/>
+<path d="M650 130 L600 60"/>
+
+
+<!-- kiri bawah -->
+<path d="M60 500 L220 420 L360 450 L500 300"/>
+<path d="M220 420 L180 330"/>
+<path d="M360 450 L400 540"/>
+
+
+<!-- kanan bawah -->
+<path d="M930 480 L780 420 L640 450 L500 300"/>
+<path d="M780 420 L850 330"/>
+<path d="M640 450 L580 540"/>
+
+
+<!-- cabang tengah -->
+<path d="M500 300 L500 180"/>
+<path d="M500 300 L500 430"/>
+
+<g class="data-flow">
+    <circle r="4" class="packet">
+        <animateMotion dur="3s" repeatCount="indefinite"
+            path="M80 100 L220 160 L350 120 L500 300"/>
+    </circle>
+
+    <circle r="4" class="packet">
+        <animateMotion dur="4s" repeatCount="indefinite"
+            path="M920 90 L760 150 L650 130 L500 300"/>
+    </circle>
+
+    <circle r="4" class="packet">
+        <animateMotion dur="3.5s" repeatCount="indefinite"
+            path="M60 500 L220 420 L360 450 L500 300"/>
+    </circle>
+</g>
+
+</g>
+
+
+<g>
+
+<circle cx="500" cy="300" r="6"/>
+
+<circle cx="220" cy="160" r="3"/>
+<circle cx="350" cy="120" r="3"/>
+<circle cx="760" cy="150" r="3"/>
+<circle cx="650" cy="130" r="3"/>
+
+<circle cx="220" cy="420" r="3"/>
+<circle cx="360" cy="450" r="3"/>
+<circle cx="780" cy="420" r="3"/>
+<circle cx="640" cy="450" r="3"/>
+
+</g>
+
+</svg>
 
     <h2>Anggota Kelompok</h2>
 
@@ -188,7 +258,10 @@
         </div>
     </div>
 
-    <div class="popup" id="popup">
+</section>
+
+<div class="popup" id="popup">
+        
          <div class="popup-content">
             <span class="close">&times;</span>
              <img id="popup-img">
@@ -226,8 +299,6 @@
 
 </div>
 
-</section>
-
 <section id="quotes" class="quotes hidden">
 
     <h2>Quotes</h2>
@@ -250,6 +321,7 @@
 <script src="loader.js"></script>
 <script src="matrix.js"></script>
 <script src="popup.js"></script>
+<script src="spotlight.js"></script>
 <script src="text_banner.js"></script>
 <script src="scroll.js"></script>
 
