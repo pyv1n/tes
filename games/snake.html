@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="loader.css">
+</head>
+<body>
+    <div id="loader">
+
+    <div class="loader-content">
+
+        <h1>Loading Game</h1>
+
+        <p id="loading-status">Initializing...</p>
+
+        <div class="loader-bar">
+            <div id="loader-fill"></div>
+        </div>
+
+        <span id="loader-percent">0%</span>
+
+    </div>
+
+</div>
+
+    <div class="game-container">
+
+        <h1>🐍 Snake Game</h1>
+
+        <div class="info">
+            <div>Score: <span id="score">0</span></div>
+            <div>High Score: <span id="highScore">0</span></div>
+        </div>
+
+        <canvas id="game" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <button id="restartBtn">Restart</button>
+        </div>
+
+        <p class="hint">
+            Gunakan <b>WASD</b> atau <b>Arrow Keys</b> untuk bergerak.<br>
+            Tekan <b>P</b> untuk Pause.
+        </p>
+
+    </div>
+
+    <script src="snake.js"></script>
+    <script src="loader.js"></script>
+
+</body>
+</html>
