@@ -130,5 +130,38 @@ document.addEventListener("keydown", (e) => {
 
 });
 
+const popupContent = document.querySelector(".popup-content");
 
+popupContent.addEventListener("mousemove", (e) => {
 
+    if (!popup.classList.contains("show")) return;
+
+    const rect = popupContent.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const rotateY = ((x / rect.width) - 0.5) * 12;
+    const rotateX = -((y / rect.height) - 0.5) * 12;
+
+    popupContent.style.transform = `
+        translateY(0)
+        scale(1)
+        perspective(1000px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+    `;
+
+});
+
+popupContent.addEventListener("mouseleave", () => {
+
+    popupContent.style.transform = `
+        translateY(0)
+        scale(1)
+        perspective(1000px)
+        rotateX(0deg)
+        rotateY(0deg)
+    `;
+
+});

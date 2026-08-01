@@ -21,10 +21,9 @@ for (let i = 0; i < columns; i++) {
 
 function draw(){
 
-    ctx.fillStyle = "#0f1117";
-    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "#0834f7";
+    ctx.fillStyle = "#00eaff";
     ctx.font = fontSize + "px monospace";
 
     for(let i=0;i<drops.length;i++){

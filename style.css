@@ -20,3 +20,40 @@ section{
     padding:100px 8%;
 
 }
+
+#spotlight{
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    background:radial-gradient(
+        circle,
+        rgba(0,212,255,.18) 0%,
+        rgba(127,92,255,.10) 35%,
+        transparent 70%
+    );
+
+    transform:translate(-50%,-50%);
+
+    filter:blur(40px);
+
+    z-index:0;
+
+    transition:
+        left .08s linear,
+        top .08s linear;
+
+}
+
+section,
+nav,
+footer{
+    position: relative;
+    z-index: 1;
+}

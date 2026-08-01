@@ -11,9 +11,15 @@
     pointer-events: none;
 
     mask-image:
-        linear-gradient(to left, black 50%, transparent 100%),
-        linear-gradient(to top, black 75%, transparent 100%);
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 30%
+        );
     -webkit-mask-image:
-        linear-gradient(to left, black 50%, transparent 100%),
-        linear-gradient(to top, black 75%, transparent 100%);
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 30%
+        );
 }

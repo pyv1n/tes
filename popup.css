@@ -2,7 +2,6 @@
 
     position:fixed;
     inset:0;
-    perspective: 1200px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -71,8 +70,11 @@
 
     position:relative;
 
+
     transform: translateY(80px) scale(0.8);
     transition: transform 0.35s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
 
 }
 
@@ -97,7 +99,7 @@
 .popup-content h2{
 
     margin-top:20px;
-    margin-bottom:0px;
+    margin-bottom:40px;
 
 }
 
@@ -203,3 +205,4 @@
     }
 
 }
+
