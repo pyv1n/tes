@@ -59,13 +59,11 @@
         opacity:.18;
     }
 
-    /* ABOUT */
 
     .about p{
         line-height:28px;
     }
 
-    /* TEAM */
 
     .cards{
         grid-template-columns:1fr;
