@@ -1,12 +1,3 @@
-@media (max-width:768px){
-
-    .marquee-group span{
-        font-size:40px;
-        white-space:normal;
-    }
-
-}
-
 .marquee{
     width:100%;
     overflow:hidden;
