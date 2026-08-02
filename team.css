@@ -1,3 +1,12 @@
+@media (max-width:768px){
+
+    .cards{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
 .team h2{
 
     text-align:center;
