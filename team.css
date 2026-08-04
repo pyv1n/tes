@@ -62,46 +62,4 @@
 
 }
 
-.network-bg{
-    position:absolute;
-    inset:0;
-    transform:scale(1.5);
-    transform-origin:center;
-
-    width:100%;
-    height:100%;
-
-    opacity:.50;
-
-    z-index:0;
-}
-
-
-.network-bg line,
-.network-bg path{
-    fill:none;
-    stroke:#00eaff;
-    stroke-width:1;
-
-    filter:drop-shadow(0 0 8px #00eaff);
-    animation:electricFlow 3s linear infinite;
-}
-
-
-.network-bg circle{
-    fill:#00eaff;
-
-    filter:drop-shadow(0 0 12px #00eaff);
-}
-
-.network-bg circle:first-child{
-    fill:#00ffff;
-    filter:
-    drop-shadow(0 0 20px #00ffff);
-}
-
-#anggota > *:not(.network-bg){
-    position:relative;
-    z-index:1;
-}
 
